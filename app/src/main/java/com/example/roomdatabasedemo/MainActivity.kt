@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun BtnClick(view:View){
         workTimeDataBase.timerDao().getAllWork().observe(this, Observer {
-            Log.e("Try","DDDDDDDDDDDDDD")
+            Log.e("Try",it.toString())
         })
     }
 }
